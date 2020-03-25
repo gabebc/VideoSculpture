@@ -1,0 +1,18 @@
+using UnityEngine;
+using System.Collections;
+
+public class ActivateObjectWKeyPress : MonoBehaviour
+{
+    public GameObject switchobject;
+    public bool IsActive = true;
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            IsActive = !IsActive; //if inventory is already True it will set it to false And the other way around.
+            //switchobject.SetActive(IsActive);
+            switchobject.GetComponent<Renderer>().enabled = !switchobject.GetComponent<Renderer>().enabled;
+        }
+       
+    }
+}
