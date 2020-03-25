@@ -1,3 +1,4 @@
+//A script to toggle a gameobject by keypress
 using UnityEngine;
 using System.Collections;
 
