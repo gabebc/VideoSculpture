@@ -1,9 +1,10 @@
+// A script to play from an array of video clips on mousepress or keypress
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
-public class Player : MonoBehaviour {
+public class VideoPlayerArray : MonoBehaviour {
 
     public VideoClip[] clips;
 
